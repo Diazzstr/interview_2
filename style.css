@@ -1,0 +1,107 @@
+.clearfix::after {
+	content: "";
+    clear: both;
+    display: table;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+	width: 30%;
+	background: #CCCCCC;
+	padding:20px;
+	clear:both;
+	content: '';
+	display: table;
+}
+
+header h1 {
+	background: rgb(100, 100, 83);
+	color: #fff;
+	font-size: 30px;
+     font-family: 'Roboto Mono', monospace;
+	font-weight: bold;	
+}
+.users,
+.search {
+	width: 50%;
+	float: left;
+
+}
+
+.users {
+	background: red;
+	height: 30px;
+}
+
+.search {
+	background: green;
+	
+}
+
+header a {
+	display: inline-block;
+	line-height: 30px;
+	background: pink;
+	color: #fff;
+	font-size: 16px;
+     font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
+}
+
+header form {
+	position: relative;	
+	background: blue;
+}
+
+header input {
+	box-sizing: border-box;
+	height: 30px;
+	padding-left: 20px;
+	font-size: 16px;
+}
+
+header input::placeholder {
+	color: grey;
+	padding-left: 10px;
+}
+
+header button {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+
+header button::before {
+	display: inline-block;
+	top:0px;
+	right:0px;
+	background-color: green;
+	content: "\f002";
+	font-family: "Font Awesome 5 free", "Font Awesome 5 Brands";
+	font-weight: 900;
+	font-size: 16px;
+	color:red;
+}
+
+.msg_container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}

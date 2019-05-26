@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div class="chat container">
 	<header>
 			<h1>Чат</h1>
 			<div class="users">
@@ -19,17 +20,28 @@
 					<button type="submit"></button>
 					<input type="search" name="" id="" placeholder="Поиск в чате...">
 				</form>
-			</div>	
-			<div class="msg_container">
-				<img src="" alt="Avatar" style="width:100%;">
-				<p>Hello. How are you today?</p>
-				<span class="time-right">11:00</span>
-			</div>
-			<div class="msg_container darker">
-				<img src="" alt="Avatar" style="width:100%;">
-				<p>Hello. How are you today?</p>
-				<span class="time-right">11:00</span>
 			</div>		
 	</header>
+	<article>
+		<h4>29.04.2019</h4>
+			<div class="msg_container">
+					<img src="" alt="Avatar" style="width:100%;">
+					<p>Hello. How are you today?</p>
+					<span class="time-right">11:00</span>
+				</div>
+				<div class="msg_container darker">
+					<img src="" alt="Avatar" style="width:100%;">
+					<p>Hello. How are you today?</p>
+					<span class="time-right">11:00</span>
+				</div>	
+	</article>
+	<footer>
+	
+		<textarea name="message-to-send" placeholder="Введите сообщение" rows="5">
+		</textarea>
+		<button class = "send_btn">Send</button>
+		<button class = "attach_btn">Attach</button>
+	</footer>
+</div>
 </body>
 </html>

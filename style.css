@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
 .clearfix::after {
 	content: "";
     clear: both;
@@ -8,27 +10,34 @@
 body {
 	margin: 0;
 	padding: 0;
+	font: 14px/20px "Lato", Arial, sans-serif;
 }
 
 * {
 	box-sizing: border-box;
 }
 
+.container {
+	margin: 0 auto;
+	padding: 20px;
+	width: 50%;
+	background: #E5E5E5;
+	border-radius: 5px;
+	border: solid 3px #BBBBBB;
+  }
+
 header {
-	width: 30%;
-	background: #CCCCCC;
-	padding:20px;
-	clear:both;
-	content: '';
-	display: table;
+	padding-bottom: 30px;
+	background-color: #F3F2F2;
 }
 
 header h1 {
-	background: rgb(100, 100, 83);
-	color: #fff;
+	color: #000;
 	font-size: 30px;
-     font-family: 'Roboto Mono', monospace;
 	font-weight: bold;	
+}
+h4 {
+	text-align:center;
 }
 .users,
 .search {
@@ -38,22 +47,17 @@ header h1 {
 }
 
 .users {
-	background: red;
+
 	height: 30px;
 }
 
-.search {
-	background: green;
-	
-}
 
 header a {
 	display: inline-block;
 	line-height: 30px;
-	background: pink;
-	color: #fff;
+	color: #A5A5A5;
 	font-size: 16px;
-     font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 	font-weight: bold;
 }
 
@@ -63,9 +67,10 @@ header form {
 }
 
 header input {
+	width: 100%;
 	box-sizing: border-box;
 	height: 30px;
-	padding-left: 20px;
+	padding-left: 8%;
 	font-size: 16px;
 }
 
@@ -79,18 +84,20 @@ header button {
 	height: 30px;
 	width: 30px;
 	cursor: pointer;
+	border: none;
+
 }
 
 header button::before {
 	display: inline-block;
 	top:0px;
 	right:0px;
-	background-color: green;
 	content: "\f002";
 	font-family: "Font Awesome 5 free", "Font Awesome 5 Brands";
 	font-weight: 900;
 	font-size: 16px;
-	color:red;
+	color:grey;
+
 }
 
 .msg_container {
@@ -104,4 +111,29 @@ header button::before {
 .darker {
     border-color: #ccc;
     background-color: #ddd;
+}
+
+footer {
+	position: relative;
+	height: 100px;
+}
+
+textarea {
+	position: absolute;
+	width: 100%;
+	border: none;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	resize: none;
+  
+}
+.send_btn {
+	float: right;
+	position: relative;
+}
+
+.attach_btn {
+	float: left;
+	position: relative;
 }
